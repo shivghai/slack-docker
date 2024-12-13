@@ -5,7 +5,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Install required dependencies
-RUN pip install --no-cache-dir slack_sdk
+RUN pip install -r requirements.txt
 
 # Copy the Python script to the container
 COPY main.py /app/main.py
